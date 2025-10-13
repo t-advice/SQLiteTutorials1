@@ -9,7 +9,11 @@
         <ListView x:Name="NotesList">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Text}" Detail="{Binding CreatedAt}" />
+                    <TextCell Text="{Binding Text}" Detail="{Binding CreatedAt}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Delete" Clicked="OnDeleteNoteClicked" CommandParameter="{Binding .}" IsDestructive="True"/>
+                        </TextCell.ContextActions>
+                    </TextCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
