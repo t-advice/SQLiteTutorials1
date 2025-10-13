@@ -1,0 +1,53 @@
+﻿
+
+```gitignore
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio
+.vs/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# MAUI
+*.apk
+*.aab
+*.app
+*.ipa
+*.xcarchive
+*.xcuserstate
+*.DS_Store
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Logs
+*.log
+*.tlog
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+
+# Local SQLite database
+*.db3
+*.sqlite
+
+# Mac
+*.DS_Store
