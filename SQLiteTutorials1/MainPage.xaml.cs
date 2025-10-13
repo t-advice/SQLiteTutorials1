@@ -60,6 +60,15 @@ namespace SQLiteTutorials1
                 }
             }
         }
+        private void OnNoteTapped(object sender, ItemTappedEventArgs e)
+        {
+            selectedNote = e.Item as Note;
+            if (selectedNote != null)
+            {
+                NoteEntry.Text = selectedNote.Text;
+            }
+        }
+
 
 
 
