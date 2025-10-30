@@ -3,7 +3,7 @@
 
 namespace SQLiteTutorials1
 {
-    public partial class App : Application
+    public partial class App : Application // Main application class
     {
         private static DatabaseService _database; // Private static variable to hold the singleton instance of DatabaseService
         public static DatabaseService Database //Static property to access the DatabaseService instance
