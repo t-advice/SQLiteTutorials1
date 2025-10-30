@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using SQLiteTutorials1.Models;
 using SQLite;
 
-namespace SQLiteTutorials1.Service
+namespace SQLiteTutorials1.Service // Namespace for the service layer of the SQLiteTutorials1 application
 {
-    public class DatabaseService
+    public class DatabaseService // Database service class for managing SQLite database operations
     {
         private readonly SQLiteAsyncConnection _database; // SQLite connection object
         public DatabaseService(string dbPath) // Constructor that takes the database path as a parameter
